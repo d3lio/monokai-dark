@@ -1,0 +1,59 @@
+{
+    "name": "monokai-dark",
+    "displayName": "monokai-dark",
+    "version": "0.1.0",
+    "publisher": "Delyan Dobrev",
+    "engines": {
+        "vscode": "*"
+    },
+    "categories": [
+        "Themes",
+        "Languages"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Monokai Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/monokai-dark.json"
+            }
+        ],
+        "languages": [
+            {
+                "id": "rust",
+                "aliases": [
+                    "Rust",
+                    "rust"
+                ],
+                "extensions": [
+                    ".rs"
+                ],
+                "configuration": "./config/rust.json"
+            },
+            {
+                "id": "toml",
+                "aliases": [
+                    "TOML",
+                    "toml"
+                ],
+                "extensions": [
+                    ".toml",
+                    ".tml"
+                ],
+                "configuration": "./config/toml.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "rust",
+                "scopeName": "source.rust",
+                "path": "./syntaxes/rust.json"
+            },
+            {
+                "language": "toml",
+                "scopeName": "source.toml",
+                "path": "./syntaxes/toml.json"
+            }
+        ]
+    }
+}
