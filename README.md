@@ -2,6 +2,8 @@
 
 A dark theme with monokai syntax highlight and dimmed operators.
 
+![Showcase](/colors.png)
+
 ## Features
 
 The most notable difference from other themes is that operators such as `+-&,;` etc. are dimmed
