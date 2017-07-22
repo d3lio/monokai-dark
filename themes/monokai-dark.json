@@ -130,6 +130,10 @@
 			}
 		},
 		{
+			"name": "Meta variable",
+			"scope": "variable.other.meta"
+		},
+		{
 			"name": "Tag name",
 			"scope": "entity.name.tag",
 			"settings": {

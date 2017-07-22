@@ -74,6 +74,36 @@
             "name": "meta.macro.source.rust"
         },
         {
+            "captures": {
+                "1": {
+                    "name": "keyword.operator.source.rust"
+                },
+                "2": {
+                    "name": "variable.other.meta.source.rust"
+                },
+                "3": {
+                    "name": "keyword.operator.source.rust"
+                },
+                "4": {
+                    "name": "storage.type.source.rust"
+                }
+            },
+            "match": "(\\$)([a-zA-Z_][a-zA-Z0-9_]*)\\s*(:)\\s*(ident|path|expr|ty|pat|stmt|block|item|meta|tt)",
+            "name": "meta.macro.fragment.source.rust"
+        },
+        {
+            "captures": {
+                "1": {
+                    "name": "keyword.operator.source.rust"
+                },
+                "2": {
+                    "name": "variable.other.meta.source.rust"
+                }
+            },
+            "match": "(\\$)([a-zA-Z_][a-zA-Z0-9_]*)",
+            "name": "variable.other.meta.source.rust"
+        },
+        {
             "match": "\\b(crate|enum|extern|fn|impl|let|mod|move|mut|pub|ref|static|struct|super|trait|type|unsafe|use|const|where)\\b",
             "name": "keyword.other.source.rust"
         },
