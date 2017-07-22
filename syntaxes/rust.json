@@ -104,8 +104,19 @@
             "name": "variable.other.meta.source.rust"
         },
         {
-            "match": "\\b(crate|enum|extern|fn|impl|let|mod|move|mut|pub|ref|static|struct|super|trait|type|unsafe|use|const|where)\\b",
+            "match": "\\b(crate|enum|extern|fn|impl|let|mod|move|mut|pub|ref|static|struct|trait|type|unsafe|use|const|where)\\b",
             "name": "keyword.other.source.rust"
+        },
+        {
+            "captures": {
+                "1": {
+                    "name": "keyword.other.module.source.rust"
+                },
+                "2": {
+                    "name": "meta.default.source.rust"
+                }
+            },
+            "match": "\\b(self|super)\\s*(::)"
         },
         {
             "match": "\\b(break|else|for|if|loop|match|return|while|continue)\\b",
