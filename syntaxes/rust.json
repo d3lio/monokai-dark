@@ -113,7 +113,7 @@
                     "name": "keyword.other.module.source.rust"
                 },
                 "2": {
-                    "name": "meta.default.source.rust"
+                    "name": "keyword.operator.source.rust"
                 }
             },
             "match": "\\b(self|super)\\s*(::)"
