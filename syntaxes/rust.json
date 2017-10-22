@@ -92,7 +92,7 @@
             "name": "variable.other.meta.source.rust"
         },
         {
-            "match": "\\b(const|crate|enum|extern|fn|impl|let|macro|mod|move|mut|pub|ref|static|struct|trait|type|unsafe|union|use|where)\\b",
+            "match": "\\b(const|crate|enum|extern|impl|let|macro|mod|move|mut|pub|ref|static|struct|trait|type|unsafe|union|use|where)\\b",
             "name": "keyword.other.source.rust"
         },
         {
