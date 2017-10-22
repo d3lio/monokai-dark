@@ -92,7 +92,19 @@
             "name": "variable.other.meta.source.rust"
         },
         {
-            "match": "\\b(const|crate|enum|extern|impl|let|macro|mod|move|mut|pub|ref|static|struct|trait|type|unsafe|union|use|where)\\b",
+            "captures": {
+                "1": {
+                    "name": "keyword.other.source.rust"
+                },
+                "2": {
+                    "name": "entity.name.function.source.rust"
+                }
+            },
+            "match": "\\b(fn)\\s+([a-zA-Z_][a-zA-Z0-9_]*)\\b",
+            "name": "meta.function.source.rust"
+        },
+        {
+            "match": "\\b(const|crate|enum|extern|fn|impl|let|macro|mod|move|mut|pub|ref|static|struct|trait|type|unsafe|union|use|where)\\b",
             "name": "keyword.other.source.rust"
         },
         {
@@ -129,18 +141,6 @@
         {
             "match": "(?<!::)\\b(Self|i8|i16|i32|i64|isize|u8|u16|u32|u64|usize|f32|f64|bool|char|str)\\b",
             "name": "storage.type.source.rust"
-        },
-        {
-            "captures": {
-                "1": {
-                    "name": "keyword.other.source.rust"
-                },
-                "2": {
-                    "name": "entity.name.function.source.rust"
-                }
-            },
-            "match": "\\b(fn)\\s+([a-zA-Z_][a-zA-Z0-9_]*)\\b",
-            "name": "meta.function.source.rust"
         },
         {
             "begin": "#!?\\[",
