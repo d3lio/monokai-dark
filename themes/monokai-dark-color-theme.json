@@ -1,14 +1,25 @@
 {
-    "name": "Monokai Dark",
+	"$schema": "vscode://schemas/color-theme",
+	"name": "Monokai Dark",
 	"type": "dark",
 	"colors": {
 		"editor.background": "#1E1E1E",
 		"editor.foreground": "#C5C8C6",
 		"selection.background": "#333333",
-		"editor.selectionBackground": "#333333"
+		"editor.selectionBackground": "#333333",
 	},
 	"tokenColors": [
 		{
+			"settings": {
+				"background": "#1E1E1E",
+				"foreground": "#C5C8C6",
+			}
+		},
+		{
+			"scope": [
+				"meta.embedded",
+				"source.groovy.embedded"
+			],
 			"settings": {
 				"background": "#1E1E1E",
 				"foreground": "#C5C8C6"
@@ -31,9 +42,21 @@
 		},
 		{
 			"name": "Template Definition",
-			"scope": "punctuation.definition.template-expression",
+			"scope": [
+				"punctuation.definition.template-expression",
+				"punctuation.section.embedded"
+			],
 			"settings": {
 				"foreground": "#F92672"
+			}
+		},
+		{
+			"name": "Reset JavaScript string interpolation expression",
+			"scope": [
+				"meta.template.expression"
+			],
+			"settings": {
+				"foreground": "#C5C8C6"
 			}
 		},
 		{
@@ -58,6 +81,13 @@
 			}
 		},
 		{
+			"name": "Variable",
+			"scope": "variable",
+			"settings": {
+				"foreground": "#C5C8C6"
+			}
+		},
+		{
 			"name": "Keyword",
 			"scope": "keyword",
 			"settings": {
@@ -65,7 +95,7 @@
 			}
 		},
 		{
-			"name": "Operator rust",
+			"name": "Operator",
 			"scope": "keyword.operator",
 			"settings": {
 				"foreground": "#676867"
@@ -75,21 +105,51 @@
 			"name": "Storage",
 			"scope": "storage",
 			"settings": {
+				"foreground": "#66D9EF"
+			}
+		},
+		{
+			"name": "Storage type keyword",
+			"scope": "storage.type",
+			"settings": {
 				"foreground": "#F92672"
 			}
 		},
 		{
 			"name": "Storage type",
-			"scope": "storage.type",
+			"scope": [
+				"storage.type.core",
+				"storage.type.meta",
+				"storage.type.class"
+			],
+			"settings": {
+				"foreground": "#66D9EF"
+			}
+		},
+		{
+			"name": "Storage modifier",
+			"scope": [
+				"storage.modifier",
+				"storage.modifier.lifetime"
+			],
+			"settings": {
+				"foreground": "#F92672"
+			}
+		},
+		{
+			"name": "Struct name",
+			"scope": "entity.name.type",
 			"settings": {
 				"foreground": "#66D9EF"
 			}
 		},
 		{
 			"name": "Class name",
-			"scope": "entity.name.type, entity.name.class",
+			"scope": [
+				"entity.name.class",
+				"entity.name.type.class"
+			],
 			"settings": {
-				"fontStyle": "italic",
 				"foreground": "#A6E22E"
 			}
 		},
@@ -112,6 +172,7 @@
 			"name": "Function argument",
 			"scope": "variable.parameter",
 			"settings": {
+				"fontStyle": "italic",
 				"foreground": "#FD971F"
 			}
 		},
@@ -121,17 +182,6 @@
 			"settings": {
 				"foreground": "#CECE1C"
 			}
-		},
-		{
-			"name": "Macro call",
-			"scope": "support.macro",
-			"settings": {
-				"foreground": "#CECE1C"
-			}
-		},
-		{
-			"name": "Meta variable",
-			"scope": "variable.other.meta"
 		},
 		{
 			"name": "Tag name",
@@ -155,18 +205,31 @@
 			}
 		},
 		{
+			"name": "Library macro",
+			"scope": "support.macro",
+			"settings": {
+				"foreground": "#CECE1C"
+			}
+		},
+		{
 			"name": "Library constant",
 			"scope": "support.constant",
+			"settings": {
+				"foreground": "#AE81FF"
+			}
+		},
+		{
+			"name": "Library class/type",
+			"scope": "support.type, support.class",
 			"settings": {
 				"foreground": "#66D9EF"
 			}
 		},
 		{
-			"name": "Library class/type",
-			"scope": "support.type, support.class, variable.language",
+			"name": "Library variable",
+			"scope": "support.other.variable",
 			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#66D9EF"
+				"fontStyle": ""
 			}
 		},
 		{
@@ -182,8 +245,14 @@
 			"scope": "invalid.deprecated",
 			"settings": {
 				"background": "#AE81FF",
-				"fontStyle": "underline",
 				"foreground": "#F8F8F0"
+			}
+		},
+		{
+			"name": "Meta attribute/annotation",
+			"scope": "meta.attribute",
+			"settings": {
+				"foreground": "#676867"
 			}
 		},
 		{
@@ -204,7 +273,6 @@
 			"name": "diff.deleted",
 			"scope": "markup.deleted",
 			"settings": {
-				"background": "#420E09FF",
 				"foreground": "#F92672"
 			}
 		},
@@ -212,7 +280,6 @@
 			"name": "diff.inserted",
 			"scope": "markup.inserted",
 			"settings": {
-				"background": "#253B22FF",
 				"foreground": "#A6E22E"
 			}
 		},
@@ -220,7 +287,6 @@
 			"name": "diff.changed",
 			"scope": "markup.changed",
 			"settings": {
-				"background": "#4A410DFF",
 				"foreground": "#E6DB74"
 			}
 		},
@@ -261,7 +327,6 @@
 			"name": "Markup Inline",
 			"scope": "markup.inline.raw",
 			"settings": {
-				"fontStyle": "",
 				"foreground": "#FD971F"
 			}
 		},
@@ -276,7 +341,6 @@
 			"name": "Markup Setext Header",
 			"scope": "markup.heading.setext",
 			"settings": {
-				"fontStyle": "",
 				"foreground": "#A6E22E"
 			}
 		},
@@ -305,19 +369,9 @@
 			}
 		},
 		{
-			"name": "TODO, FIXME, NOTE",
-			"scope": "todo",
+			"name": "this.self",
+			"scope": "variable.language",
 			"settings": {
-				"fontStyle": "bold",
-				"foreground": "#CECE1C"
-			}
-		},
-		// ================== Rust specific ==================
-		{
-			"name": "self",
-			"scope": "variable.language.source.rust",
-			"settings": {
-				"fontStyle": "italic",
 				"foreground": "#FD971F"
 			}
 		}

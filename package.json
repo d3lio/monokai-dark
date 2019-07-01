@@ -8,14 +8,14 @@
     },
     "categories": [
         "Themes",
-        "Languages"
+        "Programming Languages"
     ],
     "contributes": {
         "themes": [
             {
                 "label": "Monokai Dark",
                 "uiTheme": "vs-dark",
-                "path": "./themes/monokai-dark.json"
+                "path": "./themes/monokai-dark-color-theme.json"
             }
         ],
         "languages": [
@@ -29,30 +29,13 @@
                     ".rs"
                 ],
                 "configuration": "./config/rust.json"
-            },
-            {
-                "id": "toml",
-                "aliases": [
-                    "TOML",
-                    "toml"
-                ],
-                "extensions": [
-                    ".toml",
-                    ".tml"
-                ],
-                "configuration": "./config/toml.json"
             }
         ],
         "grammars": [
             {
                 "language": "rust",
                 "scopeName": "source.rust",
-                "path": "./syntaxes/rust.json"
-            },
-            {
-                "language": "toml",
-                "scopeName": "source.toml",
-                "path": "./syntaxes/toml.json"
+                "path": "./syntaxes/Rust.tmLanguage.json"
             }
         ]
     }
