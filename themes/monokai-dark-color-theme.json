@@ -137,20 +137,22 @@
 			}
 		},
 		{
-			"name": "Struct name",
-			"scope": "entity.name.type",
+			"name": "Class name",
+			"scope": [
+				"entity.name.type",
+				"entity.name.class"
+			],
 			"settings": {
-				"foreground": "#66D9EF"
+				"fontStyle": "italic",
+				"foreground": "#A6E22E"
 			}
 		},
 		{
-			"name": "Class name",
-			"scope": [
-				"entity.name.class",
-				"entity.name.type.class"
-			],
+			"name": "Struct name",
+			"scope": "entity.name.type.rust",
 			"settings": {
-				"foreground": "#A6E22E"
+				"fontStyle": "",
+				"foreground": "#66D9EF"
 			}
 		},
 		{
@@ -172,8 +174,7 @@
 			"name": "Function argument",
 			"scope": "variable.parameter",
 			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#FD971F"
+				"fontStyle": ""
 			}
 		},
 		{
