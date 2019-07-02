@@ -255,6 +255,9 @@
 			"include": "#macro_variables"
 		},
 		{
+			"include": "#constant"
+		},
+		{
 			"include": "#type"
 		},
 		{
@@ -282,7 +285,7 @@
 			"match": "\\b([a-zA-Z_][a-zA-Z0-9_]*\\!)\\s*[({\\[]",
 			"captures": {
 				"1": {
-					"name": "support.macro.rust"
+					"name": "entity.name.macro.rust"
 				}
 			}
 		},
@@ -413,7 +416,7 @@
 			"end": "\\{|\\(|(;)",
 			"beginCaptures": {
 				"1": {
-					"name": "storage.type.rust"
+					"name": "keyword.other.rust"
 				},
 				"2": {
 					"name": "entity.name.type.rust"
@@ -457,7 +460,7 @@
 			"end": "(;)",
 			"beginCaptures": {
 				"1": {
-					"name": "storage.type.rust"
+					"name": "keyword.other.rust"
 				},
 				"2": {
 					"name": "entity.name.type.rust"
@@ -659,7 +662,7 @@
 		},
 		"core_vars": {
 			"comment": "Core type variant",
-			"name": "support.constant.core.rust",
+			"name": "support.type.core.rust",
 			"match": "\\b(Some|None|Ok|Err)\\b"
 		},
 		"core_marker": {
@@ -728,6 +731,11 @@
 			"comment": "A type",
 			"name": "entity.name.type.rust",
 			"match": "\\b([A-Z][_A-Za-z0-9]*|_[_A-Za-z0-9]+)\\b"
+		},
+		"constant": {
+			"comment": "A constant",
+			"name": "variable.constant.rust",
+			"match": "\\b([_A-Z][_A-Z0-9]+)\\b"
 		},
 		"type_params": {
 			"comment": "Type parameters",

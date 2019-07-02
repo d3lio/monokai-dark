@@ -88,6 +88,13 @@
 			}
 		},
 		{
+			"name": "Variable constant",
+			"scope": "variable.constant",
+			"settings": {
+				"foreground": "#AE81FF"
+			}
+		},
+		{
 			"name": "Keyword",
 			"scope": "keyword",
 			"settings": {
@@ -109,29 +116,22 @@
 			}
 		},
 		{
-			"name": "Storage type keyword",
-			"scope": "storage.type",
-			"settings": {
-				"foreground": "#F92672"
-			}
-		},
-		{
-			"name": "Storage type",
+			"name": "Storage support Rust",
 			"scope": [
-				"storage.type.core",
-				"storage.type.meta",
-				"storage.type.class"
+				"storage.type.core.rust",
+				"storage.type.std.rust",
+				"storage.type.meta.rust",
+				"storage.class.core.rust",
+				"storage.class.std.rust",
 			],
 			"settings": {
+				"fontStyle": "italic",
 				"foreground": "#66D9EF"
 			}
 		},
 		{
 			"name": "Storage modifier",
-			"scope": [
-				"storage.modifier",
-				"storage.modifier.lifetime"
-			],
+			"scope": "storage.modifier",
 			"settings": {
 				"foreground": "#F92672"
 			}
@@ -148,7 +148,7 @@
 			}
 		},
 		{
-			"name": "Struct name",
+			"name": "Type name Rust",
 			"scope": "entity.name.type.rust",
 			"settings": {
 				"fontStyle": "",
@@ -174,7 +174,8 @@
 			"name": "Function argument",
 			"scope": "variable.parameter",
 			"settings": {
-				"fontStyle": ""
+				"fontStyle": "",
+				"foreground": "#FD971F"
 			}
 		},
 		{
@@ -202,6 +203,7 @@
 			"name": "Library function",
 			"scope": "support.function",
 			"settings": {
+				"fontStyle": "italic",
 				"foreground": "#A6E22E"
 			}
 		},
@@ -209,6 +211,7 @@
 			"name": "Library macro",
 			"scope": "support.macro",
 			"settings": {
+				"fontStyle": "italic",
 				"foreground": "#CECE1C"
 			}
 		},
@@ -216,6 +219,7 @@
 			"name": "Library constant",
 			"scope": "support.constant",
 			"settings": {
+				"fontStyle": "italic",
 				"foreground": "#AE81FF"
 			}
 		},
@@ -223,6 +227,7 @@
 			"name": "Library class/type",
 			"scope": "support.type, support.class",
 			"settings": {
+				"fontStyle": "italic",
 				"foreground": "#66D9EF"
 			}
 		},
@@ -230,7 +235,7 @@
 			"name": "Library variable",
 			"scope": "support.other.variable",
 			"settings": {
-				"fontStyle": ""
+				"fontStyle": "italic",
 			}
 		},
 		{
@@ -373,6 +378,7 @@
 			"name": "this.self",
 			"scope": "variable.language",
 			"settings": {
+				"fontStyle": "italic",
 				"foreground": "#FD971F"
 			}
 		}
