@@ -220,6 +220,14 @@
 			"scope": "support.constant",
 			"settings": {
 				"fontStyle": "italic",
+				"foreground": "#66D9EF"
+			}
+		},
+		{
+			"name": "Library constant property",
+			"scope": "support.constant.property",
+			"settings": {
+				"fontStyle": "italic",
 				"foreground": "#AE81FF"
 			}
 		},
