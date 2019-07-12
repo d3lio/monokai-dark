@@ -263,8 +263,15 @@
 			}
 		},
 		{
-			"name": "Meta attribute/annotation",
+			"name": "Meta attribute",
 			"scope": "meta.attribute",
+			"settings": {
+				"foreground": "#676867"
+			}
+		},
+		{
+			"name": "Meta decorator",
+			"scope": "meta.decorator",
 			"settings": {
 				"foreground": "#676867"
 			}
